@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC5567012D07CCDE0027DA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5567002D07CCDE0027DA14 /* AppDelegate.swift */; };
 		AC5567032D07CCDE0027DA14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5567022D07CCDE0027DA14 /* SceneDelegate.swift */; };
-		AC5567052D07CCDE0027DA14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5567042D07CCDE0027DA14 /* ViewController.swift */; };
-		AC55670A2D07CCE10027DA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5567092D07CCE10027DA14 /* Assets.xcassets */; };
 		AC5567152D07CDF10027DA14 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5567142D07CDF10027DA14 /* FlowCoordinator.swift */; };
+		AC6E57C42D0922540015C29F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E57C32D0922540015C29F /* Colors.swift */; };
+		AC6E57C92D09233C0015C29F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E57C82D09233C0015C29F /* FlowController.swift */; };
+		AC6E57CD2D0928990015C29F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E57CC2D0928990015C29F /* SplashViewController.swift */; };
+		AC6E57CF2D0928FA0015C29F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E57CE2D0928FA0015C29F /* SplashView.swift */; };
+		AC6E57D12D0930B60015C29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6E57D02D0930B60015C29F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC5566FD2D07CCDE0027DA14 /* NLW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5567002D07CCDE0027DA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5567022D07CCDE0027DA14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC5567042D07CCDE0027DA14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC5567092D07CCE10027DA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC55670E2D07CCE10027DA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5567142D07CDF10027DA14 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		AC6E57C32D0922540015C29F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AC6E57C82D09233C0015C29F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		AC6E57CC2D0928990015C29F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AC6E57CE2D0928FA0015C29F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AC6E57D02D0930B60015C29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,73 @@
 		AC5566FF2D07CCDE0027DA14 /* NLW */ = {
 			isa = PBXGroup;
 			children = (
+				AC6E57C02D0921DB0015C29F /* Sources */,
+				AC6E57BF2D0921BF0015C29F /* Resources */,
 				AC5567002D07CCDE0027DA14 /* AppDelegate.swift */,
 				AC5567022D07CCDE0027DA14 /* SceneDelegate.swift */,
-				AC5567042D07CCDE0027DA14 /* ViewController.swift */,
-				AC5567092D07CCE10027DA14 /* Assets.xcassets */,
 				AC55670E2D07CCE10027DA14 /* Info.plist */,
 				AC5567142D07CDF10027DA14 /* FlowCoordinator.swift */,
 			);
 			path = NLW;
+			sourceTree = "<group>";
+		};
+		AC6E57BF2D0921BF0015C29F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57D02D0930B60015C29F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC6E57C02D0921DB0015C29F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57C22D0921FE0015C29F /* Features */,
+				AC6E57C12D0921E90015C29F /* Constants */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AC6E57C12D0921E90015C29F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57C32D0922540015C29F /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AC6E57C22D0921FE0015C29F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57CA2D0928540015C29F /* Scenes */,
+				AC6E57C52D0922C90015C29F /* Coordinator */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AC6E57C52D0922C90015C29F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57C82D09233C0015C29F /* FlowController.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AC6E57CA2D0928540015C29F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57CB2D09287F0015C29F /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AC6E57CB2D09287F0015C29F /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E57CC2D0928990015C29F /* SplashViewController.swift */,
+				AC6E57CE2D0928FA0015C29F /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC55670A2D07CCE10027DA14 /* Assets.xcassets in Resources */,
+				AC6E57D12D0930B60015C29F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,9 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5567152D07CDF10027DA14 /* FlowCoordinator.swift in Sources */,
-				AC5567052D07CCDE0027DA14 /* ViewController.swift in Sources */,
+				AC6E57C42D0922540015C29F /* Colors.swift in Sources */,
 				AC5567012D07CCDE0027DA14 /* AppDelegate.swift in Sources */,
+				AC6E57CD2D0928990015C29F /* SplashViewController.swift in Sources */,
+				AC6E57C92D09233C0015C29F /* FlowController.swift in Sources */,
 				AC5567032D07CCDE0027DA14 /* SceneDelegate.swift in Sources */,
+				AC6E57CF2D0928FA0015C29F /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
